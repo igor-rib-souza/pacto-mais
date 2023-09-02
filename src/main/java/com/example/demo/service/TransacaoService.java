@@ -21,6 +21,10 @@ public class TransacaoService {
 
     public Transacao criaTransacao(Transacao transacao) throws Exception{
 
+        if (transacao.getTipoOperacaoId() < 1 || transacao.getTipoOperacaoId() > 4){
+            throw new IllegalArgumentException("TIPO INVÁLIDO DE OPERAÇÃO");
+        }
+
         LimiteConta limiteConta = limiteContaRepository.findById(transacao.getContaId())
                 .orElseThrow(() -> new EntityNotFoundException("CONTA NÃO ENCONTRADA"));
 
