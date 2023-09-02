@@ -1,10 +1,10 @@
 # TESTE PRÁTICO PACTO MAIS
 
 # FASE 1
-Foi desenvolvida uma API em Java Spring Boot, para o controle de transações em uma conta bancária
+Foi desenvolvida uma API em Java 17 e Spring Boot, para o controle de transações em uma conta bancária
 
 * Sobre as estruturas de dados: foi utilizado H2 para a criação do banco de dados, sendo criadas uma tabela para conta e uma tabela para transação. Na documentação constava uma tabela para os tipos de transações possíveis, mas optei por não criar essa tabela, visto que o nome da operação nunca era utilizado na aplicação, apenas o seu ID.
-* Uma vez executando o projeto, o banco de dados pode ser acessado na url: http://localhost:8080/h2
+* Uma vez executando o projeto, o banco de dados pode ser acessado na url: http://localhost:8080/h2, usando o user "sa", sem senha
 * No campo JDBC URL insira:
   ```
   jdbc:h2:file:~/workspace/projeto/database/database.db
