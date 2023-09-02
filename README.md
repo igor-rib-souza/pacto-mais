@@ -37,3 +37,4 @@ Nessa fase foi adicionada uma nova tabela ao banco de dados, junto a novas regra
 * Ao tentar realizar uma operação de saída monetária, caso o valor seja maior que o limite associado a conta, será exibida uma mensagem de erro e a transação não será criada
 * Devido à forma incremental com que os IDs são gerados e ao fato da conta e do limite serem criados simultaneamente, eles sempre possuem o mesmo ‘ID’
 * Também foram realizados refatoramentos a respeito da estruturação do código, melhorando o tratamento de erros e movendo a lógica dos controllers para os services
+* Também foi adicionado um check se o tipo de operação é válido (se está no intervalo [1,4])
