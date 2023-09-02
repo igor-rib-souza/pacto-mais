@@ -22,3 +22,4 @@ Foi desenvolvida uma API em Java Spring Boot, para o controle de transações em
     "valor":50.00
   }
   ```
+* Nota: o valor enviado deve sempre ser positivo, o código converterá o valor para negativo se o tipo da operação for diferente de 4, pois o ID de operação 4 é o único que simboliza a entrada de dinheiro na conta, caso não seja encontrada uma conta com o ID  informado é retornada uma mensagem de erro
