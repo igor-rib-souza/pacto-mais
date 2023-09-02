@@ -19,10 +19,6 @@ public class ContaApiController {
 
     @Autowired
     ContaService contaService;
-    @Autowired
-    ContaRepository contaRepository;
-    @Autowired
-    LimiteContaRepository limiteContaRepository;
 
     @PostMapping(value = "/conta")
     public ResponseEntity<Conta> criarConta(@RequestBody Conta conta){
